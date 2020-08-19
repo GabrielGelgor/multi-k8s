@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: PersistentVolumeClaim # A request for a defined persistent volume data store outside of pods to prevent loss on crash.
+metadata:
+    name: database-persistent-volume-claim
+spec:
+    accessModes:
+        - ReadWriteOnce
+    resources:
+        requests:
+            storage: 2Gi
