@@ -1,5 +1,5 @@
 docker build -t gabrielgelgor/multi-client:latest -t gabrielgelgor/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t gabrielgelgor/mutli-server:latest -t gabrielgelgor/mutli-server:$SHA -f ./server/Dockerfile ./server
+docker build -t gabrielgelgor/multi-server:latest -t gabrielgelgor/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t gabrielgelgor/multi-worker:latest -t gabrielgelgor/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push gabrielgelgor/multi-client:latest
